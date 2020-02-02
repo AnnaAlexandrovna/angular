@@ -15,7 +15,7 @@ import { environment } from '../../environments/environment';
 } )
 export class HomeComponent implements OnInit {
 
-
+courses = COURSES;
     errors: any
 
     constructor( private http: HttpClient ) { }

@@ -34,4 +34,131 @@
 </ngb-carousel>
 
 
+<br>
+
+<div align="center" class="blueBigText">
+  <p>Возможности проекта </p>
+</div>
+
+<div align="center" class="grayBigText">
+  <p>Aldebaran предлагает Вам набор сценариев по наиболее популярным технологиям, в каждом из которых представлены
+    уникальные интерактивные сценарии с заранее подготовленной интегрированной средой.
+  </p>
+</div>
+
+<table width="100%">
+  <tr>
+    <td>
+      <img src="https://sun9-15.userapi.com/c855536/v855536449/182662/E2DZmqSKsuw.jpg" width="602" height="400"
+           alt="Learning opportunities" align="left">
+    </td>
+    <td>
+
+      <div>
+        <a routerLink="/allcourse" routerLinkActive="active">
+          <div class="blueSmallText"> Проходите сценарии</div>
+        </a>
+        <br>
+        <div class="graySmallText"> На платфореме существует множество различных сценариев по актуальным направлениям
+        </div>
+        <br>
+        <a routerLink="/createcourse" routerLinkActive="active">
+          <div class="blueSmallText"> Создавайте сценарии</div>
+        </a>
+        <br>
+        <div class="graySmallText"> Каждый участник может создавать собственные сценарии по различным категориям
+          технологий
+        </div>
+        <br>
+        <a routerLink="/secured" routerLinkActive="active">
+        <div class="blueSmallText"> Отслеживайте прогресс</div> </a>
+
+        <br>
+        <div class="graySmallText"> После прохождения курса, он заносится Ваш профиль,
+          что позволяет вам отслеживать своей прогресс и ставить дальнейшие цели.
+          <p *ngIf="getKeycloakService().isLogged()!=true">Вы можете <a routerLink="/secured" routerLinkActive="active">войти в систему</a> чтобы профиль стал доступен </p>
+          <p *ngIf="getKeycloakService().isLogged()==true">Вы можете посмотреть <a routerLink="/userprofile" routerLinkActive="active">Ваш профиль</a> </p>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br>
+<div align="center" class="blueBigText" margin-top="10%">
+  <p> Наши приемущества</p>
+</div>
+<div align="center" class="grayBigText">
+  <p>Aldebaran хоть и является стартапом, но обладает многочисленными приемуществами,
+    которые делаю его одним из наиболее конкурентно способных проектов.
+  </p>
+</div>
+
+<table width="100%">
+  <tr>
+    <td><img src="https://sun9-62.userapi.com/c857036/v857036478/2d06/U9PP56Em4Ug.jpg" width="432" height="350"
+             alt="Our advantages" align="left" vspace="10" hspace="50"></td>
+    <td>
+      <div class="blueSmallText"> Поддержка русского языка</div>
+      <br>
+      <div class="graySmallText"> Основным языком платформы является русский язык.
+        Это делает процесс обучения более комфортным для русскоязычных пользователей,
+        так как нет необходимости тратить время на перевод инструкций
+      </div>
+      <br>
+      <div class="blueSmallText"> Все курсы являются бесплатными</div>
+      <br>
+      <div class="graySmallText"> Aldebaran является открытой платформой. Вам не нужно платить за прохождение курсов,
+        так как весь материал является и бесплатным
+      </div>
+      <br>
+      <div class="blueSmallText"> Возможность оставлять обратную связь</div>
+      <br>
+      <div class="graySmallText"> После прохождения сценария каждый пользователь может оставить обратную связь о нем.
+        Это позволяет разработчикам улучшать материал, а пользователям иметь представление о курсе до его прохождения
+      </div>
+    </td>
+
+
+  </tr>
+</table>
+
+<br>
+
+<div align="center" class="blueBigText" margin-top="10%">
+  <p> Наши сценарии </p>
+</div>
+
+<div align="center" class="grayBigText">
+  <p>Aldebaran предлагает Вам набор готовых сценариев по большеству популятрных направлений,
+    кроме того набор сценариев постоянно увеличивается,
+    так как у каждого участника платформы существует возможность добавлять собственные сценарии.
+  </p>
+</div>
+
+<table width="100%">
+  <tr>
+    <td>
+      <div class="wrapper">
+        <div class="container" *ngFor="let course of courses; index as i">
+          <img src="https://sun9-63.userapi.com/c857432/v857432478/faf2b/AybHaSRS8Gk.jpg" alt="Sticker"
+               style="width:100%;">
+          <div class="text-block">
+            <a routerLink="/excourse">{{ course.nameOfCourse }}</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="https://sun9-30.userapi.com/c857528/v857528994/109ba4/n2WOrHlyOXU.jpg" width="205" height="" alt="Logo"
+     align="left">
+<div class="graySmallText" align="center">Контакты:</div>
+<div class="graySmallText" align="center">email : mail@mail.ru</div>
 
