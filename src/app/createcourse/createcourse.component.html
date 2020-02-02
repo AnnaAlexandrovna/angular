@@ -1,0 +1,53 @@
+<div align="center" class="blueBigText">
+  <p>Создание курса </p>
+</div>
+
+<div align="center" class="grayBigText">
+  <p>Каждый пользователь портала может создать и разместить свой сценарий для обучения. Для того, чтобы создать
+    собственные курсы, пожалуйста, ознакомьтесь с правилами оформления - <a href="#doc">ссылка на документ с
+      правилами</a>
+    После ознакомления с правилами, пожалуйста, заполните данные ниже:
+  </p>
+</div>
+
+<div>
+
+  <table width="100%" cellspacing="0" cellpadding="4">
+    <tr>
+      <td>
+        <img src="https://sun9-14.userapi.com/c857528/v857528994/109c07/MbQ8l3zZyhA.jpg" width="482" height="300"
+             alt="Create course" align="left" vspace="10" hspace="50">
+      </td>
+
+      <td>
+        <ngb-alert [dismissible]="false" *ngIf="">
+          <strong>Важно!</strong> Создавать курсы могут только авторизование пользователи. Пожалуйста,<a routerLink="/login"  routerLinkActive="active" style="color: saddlebrown; text-decoration: underline;"  > войдите в систему</a>
+        </ngb-alert>
+
+        <form name="test" method="post" action="" align="top">
+
+          <table width="100%" cellspacing="0" cellpadding="4">
+            <tr>
+              <td align="right" width="200" class="grayBigText">Название курса</td>
+              <td><input type="text" name="nameOfCourse" size="60"></td>
+            </tr>
+            <tr>
+              <td align="right" width="200" class="grayBigText">Раздел курса</td>
+              <td><input type="text" name="topicOfCourse" size="60"></td>
+            </tr>
+            <tr>
+              <td align="right" width="200" class="grayBigText">Ссылка на репозиторий курса</td>
+              <td><input type="text" name="linkToRepository" size="60"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td *ngIf=""><input type="submit" value="Создать курс" class="buttonStile"></td>
+              <td *ngIf=""><button disabled>Создать курс</button></td>
+            </tr>
+          </table>
+
+        </form>
+      <td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,51 @@
+<div align="center" class="blueBigText">
+  <p>{{course.nameOfCourse}}</p>
+</div>
+
+
+<div>
+  <table width="100%" cellspacing="0" cellpadding="4">
+    <tr>
+      <td>
+        <div class="container">
+          <img src="https://sun9-63.userapi.com/c857432/v857432478/faf2b/AybHaSRS8Gk.jpg" alt="Sticker"
+               style="width:100%;">
+          <div class="text-block">
+            <p>{{ course.nameOfCourse }}</p>
+          </div>
+        </div>
+        <div class="grayBigText">
+          <p>Автор курса - {{course.author}}</p>
+          <p>Сложность - {{course.complexity}} балл</p>
+          <p>ID курса - {{course.idOfCourse}}</p>
+        </div>
+      </td>
+
+      <td>
+        <div align="left" class="grayBigText">
+          <p>{{course.discriptionOfCourse}}</p>
+        </div>
+
+    <tr>
+      <td></td>
+      <td>
+        <button class="buttonStile"><a routerLink="/startcourse">Начать прохождение сценария</a></button>
+        <br>
+        <button class="buttonStile"><a routerLink="/changecourse">Изменить сценарий</a></button>
+        <p class="grayBigText">Отзовы:</p>
+        <table width="100%" cellspacing="0" cellpadding="4" class="board">
+          <tr>
+            <td>
+              <p class="grayBigText">[Автор]</p>
+
+            </td>
+            <td>
+              <p class="grayBigText">[Отзыв]</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+

@@ -1,0 +1,56 @@
+<div align="center" class="blueBigText">
+  <p>Завершение сценария {{course.nameOfCourse}}</p>
+</div>
+
+<div>
+  <table width="100%" cellspacing="0" cellpadding="4">
+    <tr>
+      <td>
+        <img src="https://sun9-12.userapi.com/c857528/v857528994/109be7/wbYFMl3-DeE.jpg" width="290" height="290"
+             alt="Congratulation" align="left" vspace="10" hspace="50">
+      </td>
+
+      <td>
+        <div align="center" class="grayBigText">
+          <p>Поздравляем, Вы успешно закончили данный курс!
+            Так держать!
+            Но у нас всегда есть что-то новенькое...
+            Вы можете пройти новый курс, создать свой курс, а так же оставить отзыв на этот курс.
+          </p>
+        </div>
+        <form name="test" method="post" action="" align="top">
+
+          <table width="100%" cellspacing="0" cellpadding="4">
+
+            <tr>
+              <td align="right" width="100" class="grayBigText">Оставить отзыв</td>
+              <td><input type="text" name="review" size="60"></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td><input type="submit" value="Отправить отзыв" class="buttonStile">
+              </td>
+            </tr>
+          </table>
+
+        </form>
+      <td>
+    </tr>
+  </table>
+</div>
+
+<div align="center" class="blueBigText">
+  <p>Что будете делать дальше?</p>
+</div>
+
+<br>
+<div class="centerLocation">
+  <form action="">
+    <p>
+      <button class="buttonStile"><a routerLink="/allcourse">Все разделы</a></button>
+      <button class="buttonStile" *ngIf=""><a routerLink="/userprofile">Мой профиль</a></button>
+      <button class="buttonStile"><a routerLink="/home1">На главную</a></button>
+    </p>
+  </form>
+</div>

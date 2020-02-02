@@ -1,0 +1,47 @@
+<br>
+
+<div align="center" class="blueBigText">
+  <p>Выберете один из сценариев: </p>
+</div>
+
+<form>
+  <p>
+    <input type="search" name="qrequest" placeholder="Введите название сценария" class="graySmallText"
+           class="bigWidth">
+    <input type="submit" name="search" value="Поиск" class="buttonStile">
+  </p>
+</form>
+
+<table width="100%" cellspacing="0" cellpadding="2">
+  <tr>
+    <td>
+      <div class="wrapper">
+        <div class="container" *ngFor="let course of courses; index as i">
+          <img src="https://sun9-63.userapi.com/c857432/v857432478/faf2b/AybHaSRS8Gk.jpg" alt="Sticker"
+               style="width:100%;">
+          <div class="text-block">
+            <a routerLink="/excourse">{{ course.nameOfCourse }}</a>
+          </div>
+        </div>
+      </div>
+    </td>
+
+
+    <td>
+      <p class="graySmallWidthText">Фильтры</p>
+      <p class="graySmallWidthUnderText">По категории</p>
+      <form method="post" action="">
+        <p class="graySmallWidthText" *ngFor="let sortByCategoryCase of sortByCategoryCases; index as i"><input type="checkbox" name="topic" value="docker">{{sortByCategoryCase.category}}</p>
+
+
+
+        <p class="graySmallWidthUnderText">По прохождению</p>
+        <p class="graySmallWidthText" *ngFor="let isPassCase of isPassCases; index as i"><input type="checkbox" name="isFinished" value="true"> {{isPassCase.name}}</p>
+        <p class="graySmallWidthUnderText">По автору</p>
+        <p class="graySmallWidthText" *ngFor="let isMeAuthorCase of isMeAuthorCases; index as i"><input type="checkbox" name="author" value="userId"> {{isMeAuthorCase.name}}</p>
+        <p><input type="submit" value="Отправить" class="buttonStile"></p>
+      </form>
+    </td>
+</table>
+
+

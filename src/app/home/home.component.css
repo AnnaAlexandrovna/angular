@@ -1,0 +1,55 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blueBigText {
+    font-size: 28px;
+    background: #FFF;
+    color: #396EA5;
+    font-family: Calibri Light;
+     }
+
+.grayBigText {
+    font-size: 20px;
+    background: #FFF;
+    color: #666666;
+    font-family: Calibri Light;
+    float:left; /* Выравнивание по левому краю */
+    margin-right:10%;
+    margin-left:10%;
+    }
+
+.blueSmallText {
+    font-size: 20px;
+    background: #FFF;
+    color: #396EA5;
+    text-decoration: underline;
+    font-family: Calibri Light;
+    margin-right:10%;
+        margin-left:10%;
+        }
+
+.graySmallText {
+    font-family: Calibri Light;
+    font-size: 20px;
+    background: #FFF;
+    color: #666666;
+    margin-right:10%;
+    margin-left:10%;
+    }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    }
+
+/* Bottom right text */
+.text-block {
+   position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #396EA5;
+    }

@@ -1,0 +1,54 @@
+<div align="center" class="blueBigText">
+  <p>Изменение курса </p>
+</div>
+
+<div align="center" class="grayBigText">
+  <p>Если Вы являетесь владельцем курса, то у Вас есть возможность изменить данный курс, для этого заполните сведения
+    ниже:
+  </p>
+</div>
+
+<div>
+
+  <table width="100%" cellspacing="0" cellpadding="4">
+    <tr>
+      <td>
+        <img src="https://sun9-55.userapi.com/c857528/v857528994/109bff/FHAl-xwESAk.jpg" width="482" height="300"
+             alt="Change course" align="left" vspace="10" hspace="50">
+      </td>
+
+      <td>
+        <ngb-alert [dismissible]="false" *ngIf="">
+          <strong>Важно!</strong> Изменять курсы могут только авторизование пользователи. Пожалуйста,<a routerLink="/login"  routerLinkActive="active" style="color: saddlebrown; text-decoration: underline;"  > войдите в систему</a>
+        </ngb-alert>
+        <form name="test" method="post" action="" align="top">
+
+          <table width="100%" cellspacing="0" cellpadding="5">
+            <tr>
+              <td align="right" width="200" class="grayBigText">ID курса</td>
+              <td><input type="IDOfCourse" name="IDOfCourse" size="60"></td>
+            </tr>
+            <tr>
+              <td align="right" width="200" class="grayBigText">Изменить название курса</td>
+              <td><input type="nameOfCourse" name="nameOfCourse" size="60"></td>
+            </tr>
+            <tr>
+              <td align="right" width="200" class="grayBigText">Изменить раздел курса</td>
+              <td><input type="topicOfCourse" name="topicOfCourse" size="60"></td>
+            </tr>
+            <tr>
+              <td align="right" width="200" class="grayBigText">Ссылка на репозиторий измененного курса</td>
+              <td><input type="linkToRepository" name="nickname" size="60"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td *ngIf=""><input type="submit" value="Изменить курс" class="buttonStile"></td>
+              <td *ngIf=""><button disabled>Изменить курс</button></td>
+            </tr>
+          </table>
+
+        </form>
+      <td>
+    </tr>
+  </table>
+</div>
