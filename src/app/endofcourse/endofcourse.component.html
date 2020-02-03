@@ -49,7 +49,7 @@
   <form action="">
     <p>
       <button class="buttonStile"><a routerLink="/allcourse">Все разделы</a></button>
-      <button class="buttonStile" *ngIf=""><a routerLink="/userprofile">Мой профиль</a></button>
+      <button class="buttonStile" *ngIf="getKeycloakService().isLogged()==true"><a routerLink="/userprofile">Мой профиль</a></button>
       <button class="buttonStile"><a routerLink="/home1">На главную</a></button>
     </p>
   </form>

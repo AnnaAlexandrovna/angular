@@ -20,7 +20,7 @@
       </td>
 
       <td>
-        <ngb-alert [dismissible]="false" *ngIf="">
+        <ngb-alert [dismissible]="false" *ngIf="getKeycloakService().isLogged()!=true">
           <strong>Важно!</strong> Создавать курсы могут только авторизование пользователи. Пожалуйста,<a routerLink="/login"  routerLinkActive="active" style="color: saddlebrown; text-decoration: underline;"  > войдите в систему</a>
         </ngb-alert>
 
@@ -41,8 +41,8 @@
             </tr>
             <tr>
               <td></td>
-              <td *ngIf=""><input type="submit" value="Создать курс" class="buttonStile"></td>
-              <td *ngIf=""><button disabled>Создать курс</button></td>
+              <td *ngIf="getKeycloakService().isLogged()==true"><input type="submit" value="Создать курс" class="buttonStile"></td>
+              <td *ngIf="getKeycloakService().isLogged()!=true"><button disabled>Создать курс</button></td>
             </tr>
           </table>
 

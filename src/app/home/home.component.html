@@ -1,18 +1,3 @@
-<div class="center">
-	<div *ngIf="errors">{{stringify(errors)}}</div>
-	<p>This is a public page accessible to anyone.</p>
-	<p>User edward should be able to call the api while kerri should throw forbidden error since she doesn't have APIAccess role.</p>
-	<ul>
-		<li>
-			<a [routerLink]="['/secured']">Secured page in the same module.</a></li>
-
-
-		<li *ngIf="getKeycloakService().isLogged()">
-			<a (click)="getKeycloakService().logout()">Logout</a></li>
-	</ul>
-
-</div>
-
 <br>
 
 <ngb-carousel>
